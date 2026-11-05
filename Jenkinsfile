@@ -20,6 +20,8 @@ pipeline {
                 sh '''
                     ssh -o StrictHostKeyChecking=no ubuntu@${SERVER_IP} "
                         rm -rf ${APP_NAME}
+                        javac --version
+                        mvn --version
                         git clone https://github.com/Sivachaithanya-Organisation/ev-bharat.git
                         cd ${APP_NAME}
                         mvn clean package
