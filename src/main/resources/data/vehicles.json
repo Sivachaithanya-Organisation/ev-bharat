@@ -1,0 +1,262 @@
+[
+ {
+  "id": "V001",
+  "category": "car",
+  "brand": "Tata",
+  "model": "Punch EV",
+  "segment": "Micro SUV",
+  "battery": "25–35",
+  "rangeKm": 421,
+  "notes": "Frequently listed among India's best-selling e-cars in 2026; a popular first EV."
+ },
+ {
+  "id": "V002",
+  "category": "car",
+  "brand": "Tata",
+  "model": "Nexon EV",
+  "segment": "Compact SUV",
+  "battery": "30–45",
+  "rangeKm": 489,
+  "notes": "Established compact-SUV EV from the market leader."
+ },
+ {
+  "id": "V003",
+  "category": "car",
+  "brand": "Tata",
+  "model": "Curvv EV",
+  "segment": "Coupe-style SUV",
+  "battery": "45–55",
+  "rangeKm": 585,
+  "notes": "Longer-range option with a coupe roofline."
+ },
+ {
+  "id": "V004",
+  "category": "car",
+  "brand": "Tata",
+  "model": "Tiago EV",
+  "segment": "Hatchback",
+  "battery": "19.2–24",
+  "rangeKm": 315,
+  "notes": "Entry-level electric hatchback for city use."
+ },
+ {
+  "id": "V005",
+  "category": "car",
+  "brand": "Tata",
+  "model": "Harrier EV",
+  "segment": "Midsize SUV",
+  "battery": "65–75",
+  "rangeKm": 627,
+  "notes": "Flagship Tata EV with AWD variants."
+ },
+ {
+  "id": "V006",
+  "category": "car",
+  "brand": "Mahindra",
+  "model": "BE 6",
+  "segment": "Electric SUV coupe",
+  "battery": "59–79",
+  "rangeKm": 682,
+  "notes": "Built on Mahindra's INGLO electric platform."
+ },
+ {
+  "id": "V007",
+  "category": "car",
+  "brand": "Mahindra",
+  "model": "XEV 9e",
+  "segment": "Electric SUV",
+  "battery": "59–79",
+  "rangeKm": 656,
+  "notes": "Larger sibling of the BE 6 on the same platform."
+ },
+ {
+  "id": "V008",
+  "category": "car",
+  "brand": "Mahindra",
+  "model": "XEV 9S",
+  "segment": "Three-row SUV",
+  "battery": "59–79",
+  "rangeKm": 679,
+  "notes": "Seven-seat electric SUV; a strong seller since launch."
+ },
+ {
+  "id": "V009",
+  "category": "car",
+  "brand": "Mahindra",
+  "model": "XUV400",
+  "segment": "Compact SUV",
+  "battery": "34.5–39.4",
+  "rangeKm": 456,
+  "notes": "Earlier Mahindra EV, still on sale."
+ },
+ {
+  "id": "V010",
+  "category": "car",
+  "brand": "MG",
+  "model": "Windsor EV",
+  "segment": "Crossover",
+  "battery": "38–52.9",
+  "rangeKm": 449,
+  "notes": "Offered with a battery-rental (BaaS) pricing option."
+ },
+ {
+  "id": "V011",
+  "category": "car",
+  "brand": "MG",
+  "model": "Comet EV",
+  "segment": "City car",
+  "battery": "17.3",
+  "rangeKm": 230,
+  "notes": "Two-door runabout aimed at dense city traffic."
+ },
+ {
+  "id": "V012",
+  "category": "car",
+  "brand": "Hyundai",
+  "model": "Creta Electric",
+  "segment": "Midsize SUV",
+  "battery": "42–51.4",
+  "rangeKm": 473,
+  "notes": "Electric version of India's popular midsize SUV."
+ },
+ {
+  "id": "V013",
+  "category": "car",
+  "brand": "Maruti Suzuki",
+  "model": "e Vitara",
+  "segment": "Compact SUV",
+  "battery": "49–61",
+  "rangeKm": 543,
+  "notes": "Maruti Suzuki's first mass-market EV."
+ },
+ {
+  "id": "V014",
+  "category": "car",
+  "brand": "Kia",
+  "model": "Carens Clavis EV",
+  "segment": "Family MPV",
+  "battery": "42–51.4",
+  "rangeKm": 490,
+  "notes": "Roomy electric family vehicle."
+ },
+ {
+  "id": "V015",
+  "category": "car",
+  "brand": "BYD",
+  "model": "Atto 3",
+  "segment": "Premium SUV",
+  "battery": "60.5",
+  "rangeKm": 521,
+  "notes": "Premium e-SUV using LFP Blade battery cells."
+ },
+ {
+  "id": "V016",
+  "category": "2w",
+  "brand": "TVS",
+  "model": "iQube",
+  "segment": "Scooter",
+  "battery": "2.2–5.3",
+  "rangeKm": 212,
+  "notes": "TVS led India's e-2W sales in October 2026."
+ },
+ {
+  "id": "V017",
+  "category": "2w",
+  "brand": "TVS",
+  "model": "Orbiter",
+  "segment": "Scooter",
+  "battery": "3.1",
+  "rangeKm": 158,
+  "notes": "Value-focused scooter from TVS."
+ },
+ {
+  "id": "V018",
+  "category": "2w",
+  "brand": "Bajaj",
+  "model": "Chetak",
+  "segment": "Scooter",
+  "battery": "3.0–3.5",
+  "rangeKm": 153,
+  "notes": "Metal-body scooter; second in October 2026 sales."
+ },
+ {
+  "id": "V019",
+  "category": "2w",
+  "brand": "Ather",
+  "model": "Rizta",
+  "segment": "Family scooter",
+  "battery": "2.9–3.7",
+  "rangeKm": 159,
+  "notes": "Large seat and storage aimed at families."
+ },
+ {
+  "id": "V020",
+  "category": "2w",
+  "brand": "Ather",
+  "model": "450",
+  "segment": "Performance scooter",
+  "battery": "2.9–3.7",
+  "rangeKm": 161,
+  "notes": "Sporty scooter with Ather's fast-charging grid."
+ },
+ {
+  "id": "V021",
+  "category": "2w",
+  "brand": "Hero",
+  "model": "Vida VX2",
+  "segment": "Scooter",
+  "battery": "2.2–3.4",
+  "rangeKm": 142,
+  "notes": "Offered with a battery-subscription option; fast-growing in 2026."
+ },
+ {
+  "id": "V022",
+  "category": "2w",
+  "brand": "Ola Electric",
+  "model": "S1 range",
+  "segment": "Scooter",
+  "battery": "2–4",
+  "rangeKm": 242,
+  "notes": "Early market leader; share has fallen through 2026."
+ },
+ {
+  "id": "V023",
+  "category": "2w",
+  "brand": "Ampere (Greaves)",
+  "model": "Nexus",
+  "segment": "Scooter",
+  "battery": "3.0",
+  "rangeKm": 136,
+  "notes": "Value-oriented scooter from a long-time EV maker."
+ },
+ {
+  "id": "V024",
+  "category": "2w",
+  "brand": "River",
+  "model": "Indie",
+  "segment": "SUV-style scooter",
+  "battery": "4.0",
+  "rangeKm": 161,
+  "notes": "Rugged, utility-first scooter."
+ },
+ {
+  "id": "V025",
+  "category": "2w",
+  "brand": "Ultraviolette",
+  "model": "F77",
+  "segment": "Motorcycle",
+  "battery": "7.1–10.3",
+  "rangeKm": 323,
+  "notes": "High-performance electric motorcycle."
+ },
+ {
+  "id": "V026",
+  "category": "2w",
+  "brand": "Revolt",
+  "model": "RV400",
+  "segment": "Motorcycle",
+  "battery": "3.24",
+  "rangeKm": 150,
+  "notes": "Commuter electric motorcycle."
+ }
+]

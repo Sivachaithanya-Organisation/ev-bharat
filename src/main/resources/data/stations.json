@@ -1,0 +1,1011 @@
+[
+ {
+  "id": "S001",
+  "name": "Manesar highway hub",
+  "type": "highway",
+  "corridor": "NH48 Delhi–Jaipur",
+  "city": "Manesar",
+  "state": "Haryana",
+  "lat": 28.355,
+  "lng": 76.94,
+  "powerKw": 120,
+  "chargers": 6,
+  "connectors": [
+   "CCS2",
+   "Type 2 AC"
+  ],
+  "amenities": [
+   "Restrooms",
+   "Food",
+   "Wi-Fi"
+  ]
+ },
+ {
+  "id": "S002",
+  "name": "Behror highway hub",
+  "type": "highway",
+  "corridor": "NH48 Delhi–Jaipur",
+  "city": "Behror",
+  "state": "Rajasthan",
+  "lat": 27.889,
+  "lng": 76.283,
+  "powerKw": 60,
+  "chargers": 4,
+  "connectors": [
+   "CCS2",
+   "Type 2 AC"
+  ],
+  "amenities": [
+   "Restrooms",
+   "Food",
+   "Wi-Fi"
+  ]
+ },
+ {
+  "id": "S003",
+  "name": "Shahpura highway hub",
+  "type": "highway",
+  "corridor": "NH48 Delhi–Jaipur",
+  "city": "Shahpura",
+  "state": "Rajasthan",
+  "lat": 27.385,
+  "lng": 75.958,
+  "powerKw": 60,
+  "chargers": 4,
+  "connectors": [
+   "CCS2",
+   "Type 2 AC"
+  ],
+  "amenities": [
+   "Restrooms",
+   "Food",
+   "Wi-Fi"
+  ]
+ },
+ {
+  "id": "S004",
+  "name": "Sitapura highway hub",
+  "type": "highway",
+  "corridor": "NH48 Delhi–Jaipur",
+  "city": "Jaipur",
+  "state": "Rajasthan",
+  "lat": 26.78,
+  "lng": 75.84,
+  "powerKw": 120,
+  "chargers": 6,
+  "connectors": [
+   "CCS2",
+   "Type 2 AC"
+  ],
+  "amenities": [
+   "Restrooms",
+   "Food",
+   "Wi-Fi"
+  ]
+ },
+ {
+  "id": "S005",
+  "name": "Greater Noida highway hub",
+  "type": "highway",
+  "corridor": "Yamuna Expressway",
+  "city": "Greater Noida",
+  "state": "Uttar Pradesh",
+  "lat": 28.47,
+  "lng": 77.5,
+  "powerKw": 120,
+  "chargers": 6,
+  "connectors": [
+   "CCS2",
+   "Type 2 AC"
+  ],
+  "amenities": [
+   "Restrooms",
+   "Food",
+   "Wi-Fi"
+  ]
+ },
+ {
+  "id": "S006",
+  "name": "Mathura highway hub",
+  "type": "highway",
+  "corridor": "Yamuna Expressway",
+  "city": "Mathura",
+  "state": "Uttar Pradesh",
+  "lat": 27.49,
+  "lng": 77.67,
+  "powerKw": 60,
+  "chargers": 4,
+  "connectors": [
+   "CCS2",
+   "Type 2 AC"
+  ],
+  "amenities": [
+   "Restrooms",
+   "Food",
+   "Wi-Fi"
+  ]
+ },
+ {
+  "id": "S007",
+  "name": "Agra highway hub",
+  "type": "highway",
+  "corridor": "Yamuna Expressway",
+  "city": "Agra",
+  "state": "Uttar Pradesh",
+  "lat": 27.18,
+  "lng": 78.02,
+  "powerKw": 120,
+  "chargers": 6,
+  "connectors": [
+   "CCS2",
+   "Type 2 AC"
+  ],
+  "amenities": [
+   "Restrooms",
+   "Food",
+   "Wi-Fi"
+  ]
+ },
+ {
+  "id": "S008",
+  "name": "Panvel highway hub",
+  "type": "highway",
+  "corridor": "Mumbai–Pune Expressway",
+  "city": "Panvel",
+  "state": "Maharashtra",
+  "lat": 18.99,
+  "lng": 73.11,
+  "powerKw": 120,
+  "chargers": 6,
+  "connectors": [
+   "CCS2",
+   "Type 2 AC"
+  ],
+  "amenities": [
+   "Restrooms",
+   "Food",
+   "Wi-Fi"
+  ]
+ },
+ {
+  "id": "S009",
+  "name": "Lonavala highway hub",
+  "type": "highway",
+  "corridor": "Mumbai–Pune Expressway",
+  "city": "Lonavala",
+  "state": "Maharashtra",
+  "lat": 18.75,
+  "lng": 73.41,
+  "powerKw": 150,
+  "chargers": 8,
+  "connectors": [
+   "CCS2",
+   "Type 2 AC"
+  ],
+  "amenities": [
+   "Restrooms",
+   "Food",
+   "Wi-Fi"
+  ]
+ },
+ {
+  "id": "S010",
+  "name": "Wakad highway hub",
+  "type": "highway",
+  "corridor": "Mumbai–Pune Expressway",
+  "city": "Pune",
+  "state": "Maharashtra",
+  "lat": 18.6,
+  "lng": 73.76,
+  "powerKw": 60,
+  "chargers": 4,
+  "connectors": [
+   "CCS2",
+   "Type 2 AC"
+  ],
+  "amenities": [
+   "Restrooms",
+   "Food",
+   "Wi-Fi"
+  ]
+ },
+ {
+  "id": "S011",
+  "name": "Bidadi highway hub",
+  "type": "highway",
+  "corridor": "NH275 Bengaluru–Mysuru",
+  "city": "Bidadi",
+  "state": "Karnataka",
+  "lat": 12.8,
+  "lng": 77.39,
+  "powerKw": 60,
+  "chargers": 4,
+  "connectors": [
+   "CCS2",
+   "Type 2 AC"
+  ],
+  "amenities": [
+   "Restrooms",
+   "Food",
+   "Wi-Fi"
+  ]
+ },
+ {
+  "id": "S012",
+  "name": "Ramanagara highway hub",
+  "type": "highway",
+  "corridor": "NH275 Bengaluru–Mysuru",
+  "city": "Ramanagara",
+  "state": "Karnataka",
+  "lat": 12.72,
+  "lng": 77.28,
+  "powerKw": 60,
+  "chargers": 4,
+  "connectors": [
+   "CCS2",
+   "Type 2 AC"
+  ],
+  "amenities": [
+   "Restrooms",
+   "Food",
+   "Wi-Fi"
+  ]
+ },
+ {
+  "id": "S013",
+  "name": "Mandya highway hub",
+  "type": "highway",
+  "corridor": "NH275 Bengaluru–Mysuru",
+  "city": "Mandya",
+  "state": "Karnataka",
+  "lat": 12.52,
+  "lng": 76.9,
+  "powerKw": 60,
+  "chargers": 4,
+  "connectors": [
+   "CCS2",
+   "Type 2 AC"
+  ],
+  "amenities": [
+   "Restrooms",
+   "Food",
+   "Wi-Fi"
+  ]
+ },
+ {
+  "id": "S014",
+  "name": "Mysuru highway hub",
+  "type": "highway",
+  "corridor": "NH275 Bengaluru–Mysuru",
+  "city": "Mysuru",
+  "state": "Karnataka",
+  "lat": 12.3,
+  "lng": 76.64,
+  "powerKw": 120,
+  "chargers": 6,
+  "connectors": [
+   "CCS2",
+   "Type 2 AC"
+  ],
+  "amenities": [
+   "Restrooms",
+   "Food",
+   "Wi-Fi"
+  ]
+ },
+ {
+  "id": "S015",
+  "name": "Hoskote highway hub",
+  "type": "highway",
+  "corridor": "Bengaluru–Chennai",
+  "city": "Hoskote",
+  "state": "Karnataka",
+  "lat": 13.07,
+  "lng": 77.8,
+  "powerKw": 120,
+  "chargers": 6,
+  "connectors": [
+   "CCS2",
+   "Type 2 AC"
+  ],
+  "amenities": [
+   "Restrooms",
+   "Food",
+   "Wi-Fi"
+  ]
+ },
+ {
+  "id": "S016",
+  "name": "Krishnagiri highway hub",
+  "type": "highway",
+  "corridor": "Bengaluru–Chennai",
+  "city": "Krishnagiri",
+  "state": "Tamil Nadu",
+  "lat": 12.52,
+  "lng": 78.21,
+  "powerKw": 60,
+  "chargers": 4,
+  "connectors": [
+   "CCS2",
+   "Type 2 AC"
+  ],
+  "amenities": [
+   "Restrooms",
+   "Food",
+   "Wi-Fi"
+  ]
+ },
+ {
+  "id": "S017",
+  "name": "Vellore highway hub",
+  "type": "highway",
+  "corridor": "Bengaluru–Chennai",
+  "city": "Vellore",
+  "state": "Tamil Nadu",
+  "lat": 12.92,
+  "lng": 79.13,
+  "powerKw": 60,
+  "chargers": 4,
+  "connectors": [
+   "CCS2",
+   "Type 2 AC"
+  ],
+  "amenities": [
+   "Restrooms",
+   "Food",
+   "Wi-Fi"
+  ]
+ },
+ {
+  "id": "S018",
+  "name": "Sriperumbudur highway hub",
+  "type": "highway",
+  "corridor": "Bengaluru–Chennai",
+  "city": "Sriperumbudur",
+  "state": "Tamil Nadu",
+  "lat": 12.97,
+  "lng": 79.94,
+  "powerKw": 120,
+  "chargers": 6,
+  "connectors": [
+   "CCS2",
+   "Type 2 AC"
+  ],
+  "amenities": [
+   "Restrooms",
+   "Food",
+   "Wi-Fi"
+  ]
+ },
+ {
+  "id": "S019",
+  "name": "Choutuppal highway hub",
+  "type": "highway",
+  "corridor": "NH65 Hyderabad–Vijayawada",
+  "city": "Choutuppal",
+  "state": "Telangana",
+  "lat": 17.25,
+  "lng": 78.89,
+  "powerKw": 60,
+  "chargers": 4,
+  "connectors": [
+   "CCS2",
+   "Type 2 AC"
+  ],
+  "amenities": [
+   "Restrooms",
+   "Food",
+   "Wi-Fi"
+  ]
+ },
+ {
+  "id": "S020",
+  "name": "Suryapet highway hub",
+  "type": "highway",
+  "corridor": "NH65 Hyderabad–Vijayawada",
+  "city": "Suryapet",
+  "state": "Telangana",
+  "lat": 17.14,
+  "lng": 79.62,
+  "powerKw": 60,
+  "chargers": 4,
+  "connectors": [
+   "CCS2",
+   "Type 2 AC"
+  ],
+  "amenities": [
+   "Restrooms",
+   "Food",
+   "Wi-Fi"
+  ]
+ },
+ {
+  "id": "S021",
+  "name": "Kodad highway hub",
+  "type": "highway",
+  "corridor": "NH65 Hyderabad–Vijayawada",
+  "city": "Kodad",
+  "state": "Telangana",
+  "lat": 16.99,
+  "lng": 79.97,
+  "powerKw": 60,
+  "chargers": 4,
+  "connectors": [
+   "CCS2",
+   "Type 2 AC"
+  ],
+  "amenities": [
+   "Restrooms",
+   "Food",
+   "Wi-Fi"
+  ]
+ },
+ {
+  "id": "S022",
+  "name": "Vijayawada highway hub",
+  "type": "highway",
+  "corridor": "NH65 Hyderabad–Vijayawada",
+  "city": "Vijayawada",
+  "state": "Andhra Pradesh",
+  "lat": 16.51,
+  "lng": 80.65,
+  "powerKw": 120,
+  "chargers": 6,
+  "connectors": [
+   "CCS2",
+   "Type 2 AC"
+  ],
+  "amenities": [
+   "Restrooms",
+   "Food",
+   "Wi-Fi"
+  ]
+ },
+ {
+  "id": "S023",
+  "name": "Panipat highway hub",
+  "type": "highway",
+  "corridor": "NH44 Delhi–Chandigarh",
+  "city": "Panipat",
+  "state": "Haryana",
+  "lat": 29.39,
+  "lng": 76.97,
+  "powerKw": 120,
+  "chargers": 6,
+  "connectors": [
+   "CCS2",
+   "Type 2 AC"
+  ],
+  "amenities": [
+   "Restrooms",
+   "Food",
+   "Wi-Fi"
+  ]
+ },
+ {
+  "id": "S024",
+  "name": "Karnal highway hub",
+  "type": "highway",
+  "corridor": "NH44 Delhi–Chandigarh",
+  "city": "Karnal",
+  "state": "Haryana",
+  "lat": 29.69,
+  "lng": 76.99,
+  "powerKw": 60,
+  "chargers": 4,
+  "connectors": [
+   "CCS2",
+   "Type 2 AC"
+  ],
+  "amenities": [
+   "Restrooms",
+   "Food",
+   "Wi-Fi"
+  ]
+ },
+ {
+  "id": "S025",
+  "name": "Ambala highway hub",
+  "type": "highway",
+  "corridor": "NH44 Delhi–Chandigarh",
+  "city": "Ambala",
+  "state": "Haryana",
+  "lat": 30.38,
+  "lng": 76.78,
+  "powerKw": 60,
+  "chargers": 4,
+  "connectors": [
+   "CCS2",
+   "Type 2 AC"
+  ],
+  "amenities": [
+   "Restrooms",
+   "Food",
+   "Wi-Fi"
+  ]
+ },
+ {
+  "id": "S026",
+  "name": "Nadiad highway hub",
+  "type": "highway",
+  "corridor": "Ahmedabad–Vadodara Expressway",
+  "city": "Nadiad",
+  "state": "Gujarat",
+  "lat": 22.69,
+  "lng": 72.86,
+  "powerKw": 60,
+  "chargers": 4,
+  "connectors": [
+   "CCS2",
+   "Type 2 AC"
+  ],
+  "amenities": [
+   "Restrooms",
+   "Food",
+   "Wi-Fi"
+  ]
+ },
+ {
+  "id": "S027",
+  "name": "Vadodara highway hub",
+  "type": "highway",
+  "corridor": "Ahmedabad–Vadodara Expressway",
+  "city": "Vadodara",
+  "state": "Gujarat",
+  "lat": 22.31,
+  "lng": 73.18,
+  "powerKw": 120,
+  "chargers": 6,
+  "connectors": [
+   "CCS2",
+   "Type 2 AC"
+  ],
+  "amenities": [
+   "Restrooms",
+   "Food",
+   "Wi-Fi"
+  ]
+ },
+ {
+  "id": "S028",
+  "name": "Dankuni highway hub",
+  "type": "highway",
+  "corridor": "NH19 Kolkata–Durgapur",
+  "city": "Dankuni",
+  "state": "West Bengal",
+  "lat": 22.68,
+  "lng": 88.29,
+  "powerKw": 60,
+  "chargers": 4,
+  "connectors": [
+   "CCS2",
+   "Type 2 AC"
+  ],
+  "amenities": [
+   "Restrooms",
+   "Food",
+   "Wi-Fi"
+  ]
+ },
+ {
+  "id": "S029",
+  "name": "Nagpur highway hub",
+  "type": "highway",
+  "corridor": "Samruddhi Mahamarg",
+  "city": "Nagpur",
+  "state": "Maharashtra",
+  "lat": 21.15,
+  "lng": 79.09,
+  "powerKw": 60,
+  "chargers": 4,
+  "connectors": [
+   "CCS2",
+   "Type 2 AC"
+  ],
+  "amenities": [
+   "Restrooms",
+   "Food",
+   "Wi-Fi"
+  ]
+ },
+ {
+  "id": "S030",
+  "name": "Angamaly highway hub",
+  "type": "highway",
+  "corridor": "NH544 Kochi–Thrissur",
+  "city": "Angamaly",
+  "state": "Kerala",
+  "lat": 10.19,
+  "lng": 76.39,
+  "powerKw": 60,
+  "chargers": 4,
+  "connectors": [
+   "CCS2",
+   "Type 2 AC"
+  ],
+  "amenities": [
+   "Restrooms",
+   "Food",
+   "Wi-Fi"
+  ]
+ },
+ {
+  "id": "S031",
+  "name": "Connaught Place charging point",
+  "type": "city",
+  "corridor": "",
+  "city": "New Delhi",
+  "state": "Delhi",
+  "lat": 28.632,
+  "lng": 77.22,
+  "powerKw": 60,
+  "chargers": 4,
+  "connectors": [
+   "CCS2",
+   "Type 2 AC",
+   "LECCS",
+   "CHAdeMO"
+  ],
+  "amenities": [
+   "Parking",
+   "Mall or retail"
+  ]
+ },
+ {
+  "id": "S032",
+  "name": "Bandra Kurla Complex charging point",
+  "type": "city",
+  "corridor": "",
+  "city": "Mumbai",
+  "state": "Maharashtra",
+  "lat": 19.066,
+  "lng": 72.868,
+  "powerKw": 120,
+  "chargers": 6,
+  "connectors": [
+   "CCS2",
+   "Type 2 AC",
+   "LECCS",
+   "CHAdeMO"
+  ],
+  "amenities": [
+   "Parking",
+   "Mall or retail"
+  ]
+ },
+ {
+  "id": "S033",
+  "name": "Indiranagar charging point",
+  "type": "city",
+  "corridor": "",
+  "city": "Bengaluru",
+  "state": "Karnataka",
+  "lat": 12.978,
+  "lng": 77.64,
+  "powerKw": 60,
+  "chargers": 4,
+  "connectors": [
+   "CCS2",
+   "Type 2 AC",
+   "LECCS"
+  ],
+  "amenities": [
+   "Parking",
+   "Mall or retail"
+  ]
+ },
+ {
+  "id": "S034",
+  "name": "Whitefield charging point",
+  "type": "city",
+  "corridor": "",
+  "city": "Bengaluru",
+  "state": "Karnataka",
+  "lat": 12.969,
+  "lng": 77.75,
+  "powerKw": 120,
+  "chargers": 6,
+  "connectors": [
+   "CCS2",
+   "Type 2 AC",
+   "LECCS"
+  ],
+  "amenities": [
+   "Parking",
+   "Mall or retail"
+  ]
+ },
+ {
+  "id": "S035",
+  "name": "T Nagar charging point",
+  "type": "city",
+  "corridor": "",
+  "city": "Chennai",
+  "state": "Tamil Nadu",
+  "lat": 13.04,
+  "lng": 80.233,
+  "powerKw": 60,
+  "chargers": 4,
+  "connectors": [
+   "CCS2",
+   "Type 2 AC",
+   "LECCS",
+   "CHAdeMO"
+  ],
+  "amenities": [
+   "Parking",
+   "Mall or retail"
+  ]
+ },
+ {
+  "id": "S036",
+  "name": "HITEC City charging point",
+  "type": "city",
+  "corridor": "",
+  "city": "Hyderabad",
+  "state": "Telangana",
+  "lat": 17.447,
+  "lng": 78.376,
+  "powerKw": 120,
+  "chargers": 6,
+  "connectors": [
+   "CCS2",
+   "Type 2 AC",
+   "LECCS"
+  ],
+  "amenities": [
+   "Parking",
+   "Mall or retail"
+  ]
+ },
+ {
+  "id": "S037",
+  "name": "Salt Lake charging point",
+  "type": "city",
+  "corridor": "",
+  "city": "Kolkata",
+  "state": "West Bengal",
+  "lat": 22.58,
+  "lng": 88.415,
+  "powerKw": 60,
+  "chargers": 4,
+  "connectors": [
+   "CCS2",
+   "Type 2 AC",
+   "LECCS"
+  ],
+  "amenities": [
+   "Parking",
+   "Mall or retail"
+  ]
+ },
+ {
+  "id": "S038",
+  "name": "Hinjewadi charging point",
+  "type": "city",
+  "corridor": "",
+  "city": "Pune",
+  "state": "Maharashtra",
+  "lat": 18.591,
+  "lng": 73.738,
+  "powerKw": 60,
+  "chargers": 4,
+  "connectors": [
+   "CCS2",
+   "Type 2 AC",
+   "LECCS"
+  ],
+  "amenities": [
+   "Parking",
+   "Mall or retail"
+  ]
+ },
+ {
+  "id": "S039",
+  "name": "SG Highway charging point",
+  "type": "city",
+  "corridor": "",
+  "city": "Ahmedabad",
+  "state": "Gujarat",
+  "lat": 23.03,
+  "lng": 72.51,
+  "powerKw": 60,
+  "chargers": 4,
+  "connectors": [
+   "CCS2",
+   "Type 2 AC",
+   "LECCS"
+  ],
+  "amenities": [
+   "Parking",
+   "Mall or retail"
+  ]
+ },
+ {
+  "id": "S040",
+  "name": "MI Road charging point",
+  "type": "city",
+  "corridor": "",
+  "city": "Jaipur",
+  "state": "Rajasthan",
+  "lat": 26.912,
+  "lng": 75.787,
+  "powerKw": 60,
+  "chargers": 4,
+  "connectors": [
+   "CCS2",
+   "Type 2 AC",
+   "LECCS"
+  ],
+  "amenities": [
+   "Parking",
+   "Mall or retail"
+  ]
+ },
+ {
+  "id": "S041",
+  "name": "Edappally charging point",
+  "type": "city",
+  "corridor": "",
+  "city": "Kochi",
+  "state": "Kerala",
+  "lat": 10.027,
+  "lng": 76.308,
+  "powerKw": 30,
+  "chargers": 4,
+  "connectors": [
+   "Type 2 AC",
+   "LECCS"
+  ],
+  "amenities": [
+   "Parking",
+   "Mall or retail"
+  ]
+ },
+ {
+  "id": "S042",
+  "name": "Gomti Nagar charging point",
+  "type": "city",
+  "corridor": "",
+  "city": "Lucknow",
+  "state": "Uttar Pradesh",
+  "lat": 26.85,
+  "lng": 81.0,
+  "powerKw": 60,
+  "chargers": 4,
+  "connectors": [
+   "CCS2",
+   "Type 2 AC",
+   "LECCS"
+  ],
+  "amenities": [
+   "Parking",
+   "Mall or retail"
+  ]
+ },
+ {
+  "id": "S043",
+  "name": "Sector 17 charging point",
+  "type": "city",
+  "corridor": "",
+  "city": "Chandigarh",
+  "state": "Chandigarh",
+  "lat": 30.735,
+  "lng": 76.779,
+  "powerKw": 60,
+  "chargers": 4,
+  "connectors": [
+   "CCS2",
+   "Type 2 AC",
+   "LECCS"
+  ],
+  "amenities": [
+   "Parking",
+   "Mall or retail"
+  ]
+ },
+ {
+  "id": "S044",
+  "name": "Vijay Nagar charging point",
+  "type": "city",
+  "corridor": "",
+  "city": "Indore",
+  "state": "Madhya Pradesh",
+  "lat": 22.719,
+  "lng": 75.857,
+  "powerKw": 60,
+  "chargers": 4,
+  "connectors": [
+   "CCS2",
+   "Type 2 AC",
+   "LECCS"
+  ],
+  "amenities": [
+   "Parking",
+   "Mall or retail"
+  ]
+ },
+ {
+  "id": "S045",
+  "name": "GS Road charging point",
+  "type": "city",
+  "corridor": "",
+  "city": "Guwahati",
+  "state": "Assam",
+  "lat": 26.144,
+  "lng": 91.736,
+  "powerKw": 60,
+  "chargers": 4,
+  "connectors": [
+   "CCS2",
+   "Type 2 AC",
+   "LECCS"
+  ],
+  "amenities": [
+   "Parking",
+   "Mall or retail"
+  ]
+ },
+ {
+  "id": "S046",
+  "name": "Patia charging point",
+  "type": "city",
+  "corridor": "",
+  "city": "Bhubaneswar",
+  "state": "Odisha",
+  "lat": 20.296,
+  "lng": 85.824,
+  "powerKw": 60,
+  "chargers": 4,
+  "connectors": [
+   "CCS2",
+   "Type 2 AC",
+   "LECCS"
+  ],
+  "amenities": [
+   "Parking",
+   "Mall or retail"
+  ]
+ },
+ {
+  "id": "S047",
+  "name": "Technopark charging point",
+  "type": "city",
+  "corridor": "",
+  "city": "Thiruvananthapuram",
+  "state": "Kerala",
+  "lat": 8.524,
+  "lng": 76.936,
+  "powerKw": 30,
+  "chargers": 4,
+  "connectors": [
+   "Type 2 AC",
+   "LECCS"
+  ],
+  "amenities": [
+   "Parking",
+   "Mall or retail"
+  ]
+ },
+ {
+  "id": "S048",
+  "name": "Cyber Hub charging point",
+  "type": "city",
+  "corridor": "",
+  "city": "Gurugram",
+  "state": "Haryana",
+  "lat": 28.495,
+  "lng": 77.089,
+  "powerKw": 150,
+  "chargers": 8,
+  "connectors": [
+   "CCS2",
+   "Type 2 AC",
+   "LECCS"
+  ],
+  "amenities": [
+   "Parking",
+   "Mall or retail"
+  ]
+ }
+]

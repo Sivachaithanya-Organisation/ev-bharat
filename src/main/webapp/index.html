@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>EV Bharat: find chargers, models and support for electric India</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="sign">
+    <a class="brand" href="#map">EV Bharat</a>
+    <nav id="nav" aria-label="Sections">
+      <a href="#map" data-tab="map">Find chargers</a>
+      <a href="#cars" data-tab="cars">Electric cars</a>
+      <a href="#bikes" data-tab="bikes">Electric two-wheelers</a>
+      <a href="#policy" data-tab="policy">Government support</a>
+      <a href="#culture" data-tab="culture">EV culture</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="map" class="tab" aria-label="Charging station map">
+      <div class="finder">
+        <aside class="panel">
+          <div class="stats" id="stats" aria-live="polite"></div>
+          <form id="filters" autocomplete="off">
+            <input type="search" name="q" placeholder="Search a city, state or highway" aria-label="Search stations">
+            <fieldset class="seg">
+              <legend class="sr">Location type</legend>
+              <label><input type="radio" name="type" value="" checked><span>All</span></label>
+              <label><input type="radio" name="type" value="highway"><span>Highways</span></label>
+              <label><input type="radio" name="type" value="city"><span>Cities</span></label>
+            </fieldset>
+            <div class="row">
+              <select name="state" aria-label="State"><option value="">All states</option></select>
+              <select name="connector" aria-label="Connector"><option value="">Any connector</option></select>
+            </div>
+            <div class="row">
+              <select name="minKw" aria-label="Minimum charging speed">
+                <option value="0">Any speed</option>
+                <option value="30">30 kW and up</option>
+                <option value="60">60 kW and up</option>
+                <option value="120">120 kW and up</option>
+              </select>
+              <select name="radiusKm" id="radius" aria-label="Distance from me" hidden>
+                <option value="25">Within 25 km</option>
+                <option value="50">Within 50 km</option>
+                <option value="100" selected>Within 100 km</option>
+                <option value="250">Within 250 km</option>
+              </select>
+            </div>
+            <button type="button" id="near">Show stations near me</button>
+          </form>
+          <p class="count" id="count" aria-live="polite"></p>
+          <ol id="list" class="stations"></ol>
+        </aside>
+        <div id="leaflet" role="application" aria-label="Map of charging stations"></div>
+      </div>
+      <p class="note">Station locations are a sample dataset placed at town level for this demo, not live availability. Connect an official feed before using it for real trips.</p>
+    </section>
+
+    <section id="cars" class="tab page" hidden>
+      <h1>Electric cars in India</h1>
+      <p class="lead">Tata, Mahindra and MG lead a market that sold 36,911 electric cars in October 2026. Range figures are makers' claims (ARAI or MIDC); real-world range is usually lower.</p>
+      <div class="split">
+        <div><h2>Retail sales, October 2026</h2><ol class="bars" id="car-sales"></ol><p class="small" id="car-note"></p></div>
+        <div><h2>Popular models</h2><ul class="vehicles" id="car-list"></ul></div>
+      </div>
+    </section>
+
+    <section id="bikes" class="tab page" hidden>
+      <h1>Electric two-wheelers in India</h1>
+      <p class="lead">Scooters do most of the work: 2.23 lakh electric two-wheelers were sold in October 2026, a record month led by TVS.</p>
+      <div class="split">
+        <div><h2>Retail sales, October 2026</h2><ol class="bars" id="bike-sales"></ol><p class="small" id="bike-note"></p></div>
+        <div><h2>Popular models</h2><ul class="vehicles" id="bike-list"></ul></div>
+      </div>
+    </section>
+
+    <section id="policy" class="tab page" hidden>
+      <h1>How the government supports EVs</h1>
+      <p class="lead">Central schemes cover purchase, charging and manufacturing; states add road-tax and registration benefits. Rules change often, so confirm details with the scheme's ministry.</p>
+      <div id="policy-list" class="policies"></div>
+    </section>
+
+    <section id="culture" class="tab page" hidden>
+      <h1>EV culture in India</h1>
+      <p class="lead">From the daily scooter commute to the weekend highway drive, here is how India is getting used to plugging in.</p>
+      <div id="pillars" class="pillars"></div>
+      <div class="split">
+        <div><h2>Know your plugs</h2><dl id="plugs"></dl></div>
+        <div><h2>Highway trip checklist</h2><ul id="trip" class="trip"></ul></div>
+      </div>
+      <h2>Milestones</h2>
+      <ol id="timeline" class="road"></ol>
+    </section>
+  </main>
+
+  <footer>
+    <p>Market figures are October 2026 retail data from the sources below; model specifications are approximate and for orientation only.</p>
+    <ul id="sources"></ul>
+  </footer>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

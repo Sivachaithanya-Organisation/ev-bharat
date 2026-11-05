@@ -1,0 +1,13 @@
+{
+ "asOf":"October 2026",
+ "cars":{"total":36911,"note":"Retail sales, about 7% of passenger vehicle registrations. Sources differ slightly.",
+  "brands":[{"name":"Tata Motors","units":14654},{"name":"Mahindra","units":8475},{"name":"MG","units":5880},{"name":"Kia","units":1386}]},
+ "twoWheelers":{"total":223847,"note":"Retail registrations (Vahan); electric scooters, motorcycles and mopeds.",
+  "brands":[{"name":"TVS","units":60429},{"name":"Bajaj (Chetak)","units":49067},{"name":"Ather","units":31796},{"name":"Hero (Vida)","units":29901},{"name":"Ola Electric","units":12096},{"name":"Ampere (Greaves)","units":10838},{"name":"River","units":6796},{"name":"BGauss","units":5554}]},
+ "sources":[
+  {"name":"Autocar India: October 2026 electric car sales","url":"https://www.autocarindia.com/car-news/october-2026-ev-sales-over-30000-units-hit-for-fifth-straight-month-441232"},
+  {"name":"Autocar Pro: October 2026 e-2W sales","url":"https://www.autocarpro.in/news/diwali-comes-early-for-electric-2ws-october-sales-cross-223000-tvs-delivers-record-60429-units-135631"},
+  {"name":"India TV: PM E-DRIVE extended to 2028","url":"https://www.indiatvnews.com/business/news/pm-e-drive-scheme-extended-till-2028-ev-subsidy-cut-for-electric-two-wheelers-2026-08-11-1051060"},
+  {"name":"E-Mobility Plus: PM E-DRIVE charging guidelines","url":"https://emobilityplus.com/2025/10/01/ministry-of-heavy-industries-launches-pm-e-drive-scheme-with-%E2%82%B92000-crore-boost-for-ev-charging-infrastructure-across-india/"}
+ ]
+}
