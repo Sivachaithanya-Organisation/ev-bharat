@@ -20,6 +20,8 @@ pipeline {
                 sh '''
                     ssh -o StrictHostKeyChecking=no ubuntu@${SERVER_IP} "
                         rm -rf ${APP_NAME}
+                        export JAVA_HOME=/usr/lib/jvm/java-21-openjdk-amd64
+                        export PATH=$JAVA_HOME/bin:$PATH
                         javac --version
                         mvn --version
                         git clone https://github.com/Sivachaithanya-Organisation/ev-bharat.git
