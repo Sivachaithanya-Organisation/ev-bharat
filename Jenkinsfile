@@ -3,7 +3,7 @@ pipeline {
 
     environment {
         SERVER_IP = credentials('maven-server-ip')
-        APP_NAME = ev-bharat
+        APP_NAME = "ev-bharat"
     }
 
     stages {
