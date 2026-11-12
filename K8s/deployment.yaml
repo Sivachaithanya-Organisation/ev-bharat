@@ -1,0 +1,29 @@
+apiVersion: "apps/v1"
+kind: "Deployment"
+metadata:
+  name: "ev-bharat"
+  namespace: "ev"
+  labels:
+    app: "backend"
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: "backend"
+  template:
+    metadata:
+      labels:
+        app: "backend"
+    spec:
+      containers:
+        - name: "ev-bharat"
+          image: "517293881035.dkr.ecr.us-west-2.amazonaws.com/siva-k8sproject:IMAGE_TAG"
+          ports:
+            - containerPort: 8080
+          resources:
+            requests:
+              memory: "64Mi"
+              cpu: "250m"
+            limits:
+              memory: "128Mi"
+              cpu: "500m"
