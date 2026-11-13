@@ -16,3 +16,5 @@ EV Bharat as a Java 21 + Maven WAR for Tomcat 9, but I haven’t compiled or run
 ## API: a small servlet serves the data at /api/*. To update content, edit the JSON files in src/main/resources/data.
 
 Deploy: copy target/ev-bharat.war into Tomcat’s webapps, then open http://localhost:8080/ev-bharat/.
+
+## helm deployment
