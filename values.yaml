@@ -1,0 +1,32 @@
+replicaCount: 3
+
+image:
+  repository: 517293881035.dkr.ecr.us-west-2.amazonaws.com/siva-k8sproject
+  tag: "${{ github.sha }}"
+  pullPolicy: Always
+
+service:
+  type: ClusterIP
+  port: 80
+  targetPort: 8080
+
+ingress:
+  enabled: true
+  class: alb
+  scheme: internet-facing
+  targetType: ip
+  listenPorts: '[{"HTTP": 80},{"HTTPS": 443}]'
+  sslRedirect: "443"
+  certificateARN: arn:aws:acm:us-west-2:517293881035:certificate/649f45ac-5b4c-4d67-b6e5-32ef709bac9d
+  host: ev-bharat.sivadevops.cloud
+  path: /
+  pathType: Prefix
+
+resources:
+  requests:
+    memory: "64Mi"
+    cpu: "250m"
+  limits:
+    memory: "128Mi"
+    cpu: "500m"
+
