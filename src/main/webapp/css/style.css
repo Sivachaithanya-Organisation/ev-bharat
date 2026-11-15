@@ -28,13 +28,19 @@ nav a:hover { border-color: rgba(255,255,255,.55); }
 nav a[aria-current="page"] { border-color: var(--white); background: var(--sign-dark); }
 
 /* Finder */
-.finder { display: grid; grid-template-columns: 390px 1fr; height: calc(100vh - 118px); min-height: 520px; }
-.panel { display: flex; flex-direction: column; min-height: 0; border-right: 1px solid var(--line); background: var(--white); }
+.finder { display: grid; grid-template-columns: 390px minmax(0, 1fr); grid-template-rows: minmax(0, 1fr); height: calc(100vh - 80px); min-height: 520px; }
+.panel { display: block; min-height: 0; overflow-y: auto; border-right: 1px solid var(--line); background: var(--white); }
+.stations button { border-radius: 0; }
+.stations li:last-child { border-bottom: 0; }
 .stats { display: flex; gap: 1.2rem; padding: .8rem 1rem; background: var(--asphalt); color: var(--white); }
 .stats div { font-size: .85rem; line-height: 1.2; }
 .stats b { display: block; font: 700 1.6rem "Barlow Condensed", sans-serif; color: var(--milestone); }
 #filters { padding: .8rem 1rem; display: grid; gap: .55rem; border-bottom: 1px solid var(--line); }
 input[type=search], select, #near { font: inherit; padding: .5rem .6rem; border: 1px solid #aeb4aa; border-radius: var(--radius); background: var(--white); width: 100%; }
+.route-box { display: grid; gap: .45rem; padding: .55rem; border: 1px solid var(--line); border-radius: var(--radius); background: #f8faf5; }
+.route-actions button { font: inherit; padding: .5rem .6rem; border: 1px solid #aeb4aa; border-radius: var(--radius); cursor: pointer; background: var(--sign); color: var(--white); font-weight: 600; }
+.route-actions .ghost { background: var(--white); color: var(--asphalt); }
+.route-info { margin: 0; font-size: .85rem; color: var(--muted); }
 .row { display: grid; grid-template-columns: 1fr 1fr; gap: .55rem; }
 .seg { display: flex; border: 0; padding: 0; margin: 0; }
 .seg label { flex: 1; }
@@ -47,7 +53,7 @@ input[type=search], select, #near { font: inherit; padding: .5rem .6rem; border:
 #near { background: var(--milestone); border-color: #c99f00; font-weight: 600; cursor: pointer; }
 #near[aria-pressed="true"] { background: var(--asphalt); color: var(--white); border-color: var(--asphalt); }
 .count { margin: 0; padding: .5rem 1rem; color: var(--muted); font-size: .9rem; border-bottom: 1px solid var(--line); }
-.stations { list-style: none; margin: 0; padding: 0; overflow-y: auto; flex: 1; }
+.stations { list-style: none; margin: 0; padding: 0; }
 .stations li { border-bottom: 1px solid var(--line); }
 .stations button { display: grid; grid-template-columns: 14px 1fr auto; gap: .2rem .7rem; width: 100%; text-align: left; font: inherit; background: none; border: 0; padding: .65rem 1rem; cursor: pointer; }
 .stations button:hover { background: #eef2ea; }
@@ -55,10 +61,15 @@ input[type=search], select, #near { font: inherit; padding: .5rem .6rem; border:
 .dot { width: 14px; height: 14px; border-radius: 50%; margin-top: .35rem; border: 2px solid var(--white); box-shadow: 0 0 0 1px rgba(0,0,0,.35); }
 .dot.highway, .pin.highway { background: var(--milestone); }
 .dot.city, .pin.city { background: var(--sign); }
+.route-hit { border: 2px solid #fff; }
 .kw { font-weight: 600; }
 #leaflet { height: 100%; min-height: 360px; }
 .pin { width: 16px; height: 16px; border-radius: 50%; border: 3px solid var(--white); box-shadow: 0 0 0 1px rgba(0,0,0,.45); }
 .popup h3 { font-size: 1.25rem; }
+.cluster { background: none; }
+.cluster span { display: flex; align-items: center; justify-content: center; width: 40px; height: 40px; border-radius: 50%; border: 3px solid var(--white); box-shadow: 0 0 0 1px rgba(0,0,0,.45); font-weight: 700; }
+.cluster.highway span { background: var(--milestone); color: var(--asphalt); }
+.cluster.city span { background: var(--sign); color: var(--white); }
 .popup p { margin: .25rem 0; }
 .note { margin: 0; padding: .6rem 1.25rem; font-size: .88rem; color: var(--muted); background: #ebede6; }
 
@@ -110,10 +121,34 @@ footer p { margin: 0 0 .5rem; max-width: 80ch; }
 footer ul { margin: 0; padding-left: 1.1rem; }
 footer a { color: var(--milestone); }
 
+/* Accounts and rentals */
+.account { margin-left: auto; display: flex; align-items: center; gap: .6rem; color: var(--white); }
+.acct-btn { font: inherit; font-weight: 600; padding: .45rem .9rem; border: 1px solid var(--milestone); border-radius: 999px; background: var(--milestone); color: var(--asphalt); cursor: pointer; }
+.acct-btn:hover { filter: brightness(.95); }
+.acct-btn.ghost { background: transparent; color: inherit; border-color: currentColor; }
+.card { background: var(--white); border: 1px solid var(--line); border-radius: 12px; padding: 1.2rem 1.4rem; box-shadow: 0 1px 3px rgba(0,0,0,.06); }
+.form { display: grid; gap: .7rem; }
+.form label, .auth label { display: grid; gap: .25rem; font-weight: 500; }
+.form input, .form select, .form textarea, .auth input { font: inherit; padding: .5rem .6rem; border: 1px solid #aeb4aa; border-radius: var(--radius); width: 100%; background: var(--white); }
+.pick-map { height: 240px; border-radius: var(--radius); border: 1px solid var(--line); }
+.form-msg { margin: 0; min-height: 1.2em; font-size: .9rem; color: #9a1b1b; }
+.my-points { list-style: none; margin: 0; padding: 0; display: grid; gap: .6rem; }
+.my-points li { display: flex; justify-content: space-between; gap: 1rem; align-items: center; background: var(--white); border: 1px solid var(--line); border-radius: 10px; padding: .7rem 1rem; }
+.my-points small { display: block; color: var(--muted); }
+.my-points .acct-btn.ghost { color: var(--asphalt); }
+.auth { border: 0; border-radius: 14px; padding: 1.4rem 1.6rem; width: min(92vw, 380px); box-shadow: 0 10px 40px rgba(0,0,0,.3); }
+.auth::backdrop { background: rgba(32,38,43,.55); }
+.auth form { display: grid; gap: .8rem; }
+.auth .acct-btn.ghost { color: var(--asphalt); }
+.pin.rental { background: #2f80ed; }
+.tag { background: #2f80ed; color: var(--white); border-radius: 999px; padding: 0 .5rem; font-size: .75rem; font-weight: 600; }
+
 @media (max-width: 860px) {
-  .finder { grid-template-columns: 1fr; height: auto; }
+  .account { margin-left: 0; }
+  .finder { grid-template-columns: 1fr; grid-template-rows: auto; height: auto; }
+  .panel { overflow: visible; min-height: auto; }
   #leaflet { height: 50vh; order: -1; }
-  .stations { max-height: 50vh; }
+  .stations { max-height: 50vh; overflow-y: auto; }
   .split { grid-template-columns: 1fr; }
   .policy { grid-template-columns: 1fr; gap: .5rem; }
   .bars li { grid-template-columns: 7rem 1fr 4rem; }

@@ -24,7 +24,7 @@ public final class StationService {
     public List<Station> search(Query q) {
         Stream<Station> stream = stations.stream()
                 .filter(s -> blank(q.type()) || s.type().equalsIgnoreCase(q.type()))
-                .filter(s -> blank(q.state()) || s.state().equalsIgnoreCase(q.state()))
+                .filter(s -> blank(q.state()) || s.state().trim().equalsIgnoreCase(q.state().trim()))
                 .filter(s -> blank(q.connector())
                         || s.connectors().stream().anyMatch(c -> c.equalsIgnoreCase(q.connector())))
                 .filter(s -> s.powerKw() >= q.minKw())

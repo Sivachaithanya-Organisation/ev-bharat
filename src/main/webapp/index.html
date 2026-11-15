@@ -8,6 +8,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -19,7 +21,12 @@
       <a href="#bikes" data-tab="bikes">Electric two-wheelers</a>
       <a href="#policy" data-tab="policy">Government support</a>
       <a href="#culture" data-tab="culture">EV culture</a>
+      <a href="#rent" data-tab="rent">Rent your charger</a>
     </nav>
+    <div class="account" id="account">
+      <button type="button" id="loginOpen" class="acct-btn">Log in / Sign up</button>
+      <span id="userMenu" hidden><span id="userName"></span> <button type="button" id="logoutBtn" class="acct-btn ghost">Log out</button></span>
+    </div>
   </header>
 
   <main>
@@ -29,6 +36,18 @@
           <div class="stats" id="stats" aria-live="polite"></div>
           <form id="filters" autocomplete="off">
             <input type="search" name="q" placeholder="Search a city, state or highway" aria-label="Search stations">
+            <div class="route-box">
+              <div class="row">
+                <input type="search" id="fromPoint" list="routePoints" placeholder="From (city)" aria-label="Route from">
+                <input type="search" id="toPoint" list="routePoints" placeholder="Destination (city)" aria-label="Route destination">
+              </div>
+              <div class="row route-actions">
+                <button type="button" id="routeGo">Show route stations</button>
+                <button type="button" id="routeClear" class="ghost">Clear route</button>
+              </div>
+              <p id="routeInfo" class="route-info" aria-live="polite"></p>
+              <datalist id="routePoints"></datalist>
+            </div>
             <fieldset class="seg">
               <legend class="sr">Location type</legend>
               <label><input type="radio" name="type" value="" checked><span>All</span></label>
@@ -60,7 +79,6 @@
         </aside>
         <div id="leaflet" role="application" aria-label="Map of charging stations"></div>
       </div>
-      <p class="note">Station locations are a sample dataset placed at town level for this demo, not live availability. Connect an official feed before using it for real trips.</p>
     </section>
 
     <section id="cars" class="tab page" hidden>
@@ -98,6 +116,63 @@
       <h2>Milestones</h2>
       <ol id="timeline" class="road"></ol>
     </section>
+
+    <section id="rent" class="tab page" hidden>
+      <h1>Rent out your charger</h1>
+      <p class="lead">Own a home or shop charging point? List it here so EV drivers nearby can find it and contact you. Your listing appears on the Find chargers map with a blue marker.</p>
+      <div id="rentGuest" class="card" hidden>
+        <p>Please log in to add your charger.</p>
+        <button type="button" class="acct-btn" id="rentLogin">Log in / Sign up</button>
+      </div>
+      <div id="rentMember" class="split" hidden>
+        <form id="pointForm" class="card form" autocomplete="off">
+          <h2>Add a charging point</h2>
+          <label>Title<input name="title" required minlength="3" maxlength="100" placeholder="e.g. Home charger, Koramangala"></label>
+          <div class="row">
+            <label>City<input name="city" required maxlength="60"></label>
+            <label>State<input name="state" required maxlength="60"></label>
+          </div>
+          <div class="row">
+            <label>Connector
+              <select name="connector" required>
+                <option>CCS2</option><option>Type 2 (AC)</option><option>CHAdeMO</option>
+                <option>Bharat AC-001</option><option>Bharat DC-001</option><option>3-pin (slow)</option>
+              </select>
+            </label>
+            <label>Power (kW)<input name="powerKw" type="number" min="1" max="400" required></label>
+          </div>
+          <div class="row">
+            <label>Price per kWh (₹)<input name="pricePerKwh" type="number" min="0" max="1000" step="0.5" required></label>
+            <label>Contact phone<input name="phone" type="tel" required placeholder="+91 98765 43210"></label>
+          </div>
+          <label>Notes (timings, parking, rules)<textarea name="notes" rows="3" maxlength="500"></textarea></label>
+          <p class="small">Click the map to place your charger.</p>
+          <div id="pickMap" class="pick-map"></div>
+          <input type="hidden" name="lat"><input type="hidden" name="lng">
+          <p id="pointMsg" class="form-msg" role="alert"></p>
+          <button type="submit" class="acct-btn">Add charger</button>
+        </form>
+        <div>
+          <h2>My chargers</h2>
+          <ul id="myPoints" class="my-points"></ul>
+        </div>
+      </div>
+    </section>
+
+    <dialog id="authDialog" class="auth">
+      <form id="authForm" method="dialog" autocomplete="on">
+        <h2 id="authTitle">Log in</h2>
+        <label id="nameRow" hidden>Name<input name="name" autocomplete="name" maxlength="80"></label>
+        <label>E-mail<input name="email" type="email" required autocomplete="email"></label>
+        <label>Password<input name="password" type="password" required minlength="8" maxlength="72" autocomplete="current-password"></label>
+        <p id="authMsg" class="form-msg" role="alert"></p>
+        <div class="row">
+          <button type="submit" class="acct-btn" id="authSubmit">Log in</button>
+          <button type="button" class="acct-btn ghost" id="authCancel">Cancel</button>
+        </div>
+        <p class="small"><a href="#" id="authSwitch">New here? Create an account</a></p>
+      </form>
+    </dialog>
   </main>
 
   <footer>
@@ -106,6 +181,7 @@
   </footer>
 
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"></script>
   <script src="js/app.js"></script>
 </body>
 </html>
